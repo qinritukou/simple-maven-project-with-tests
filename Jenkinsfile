@@ -11,6 +11,6 @@ node ('master') {
   }
   stage('Results') {
     junit '**/target/surefire-reports/TEST-*.xml' 
-    acchive 'target/*.jar'
+    archive 'target/*.jar'
   }
 }
